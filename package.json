@@ -12,7 +12,7 @@
     "@types/node-fetch": "^2.6.3",
     "eslint": "^7.14.0",
     "eslint-config-web-scrobbler": "^2.0.2",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "prettier": "^2.2.0",
     "prettier-config-web-scrobbler": "^0.1.0",
     "tsx": "^3.12.6"
