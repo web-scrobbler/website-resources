@@ -91,9 +91,6 @@ fm.douban.fm
 # Focus@Will
 www.focusatwill.com
 
-# Subphonic (owncloud plugin)
-*
-
 # Digitally Imported
 www.di.fm
 
@@ -108,12 +105,6 @@ music.yandex.ru
 music.yandex.by
 music.yandex.kz
 music.yandex.ua
-
-# Plex
-*32400
-plex.tv
-plex.tv
-plex.tv
 
 # TuneIn
 tunein.com
@@ -276,10 +267,6 @@ en.noisefm.ru
 # WWOZ
 www.wwoz.org
 
-# Sonerezh
-sonerezh.tld
-*
-
 # Youradio
 www.youradio.cz
 
@@ -319,11 +306,6 @@ anghami.com
 # Mail.ru Music
 my.mail.ru
 my.mail.ru
-
-# Emby/Jellyfin
-*8096
-*8920
-app.emby.media
 
 # Freegal Music
 freegalmusic.com
@@ -401,9 +383,6 @@ player.rockfm.ru
 # Radio JAZZ
 player.radiojazzfm.ru
 
-# WO Streaming
-*player.wostreaming.net
-
 # Listen Live
 player.listenlive.co
 
@@ -425,13 +404,6 @@ www.webradio.de
 
 # The Breeze
 www.thebreeze.com
-
-# RadioPlayer
-ukradioplayer.tld
-radioplayer.tld
-*
-*
-*
 
 # deltaradio
 www.deltaradio.de
@@ -647,9 +619,6 @@ super45.fm/
 # R/a/dio
 r-a-d.io
 
-# Apple Music
-*music.apple.com
-
 # Primephonic
 play.primephonic.com
 
@@ -858,10 +827,6 @@ streetvoice.com
 # Red Bull
 www.redbull.com
 
-# Synology
-*5000
-*
-
 # Ragya
 www.ragya.com
 
@@ -924,9 +889,6 @@ calm.com
 # Keakie
 keakie.com
 
-# KKBOX
-*play.kkbox.com
-
 # Thrill Jockey
 thrilljockey.com
 
@@ -951,47 +913,17 @@ www.rockandpop.cl
 # WYEP
 wyep.org
 
-# ZENO
-*zeno.fm
-
 # Naxos Music Library
 naxosmusiclibrary.com
-
-# Klassik Radio
-*klassikradio.de
 
 # RefNet
 listen.refnet.fm
 
-# La Radio du bord de l'eau
-*auborddeleau.radio
-
-# Radio Willy
-*willy.radio
-
-# NIGHT.FM
-*night.fm
-
 # Radio Nowy Swiat
 nowyswiat.online
 
-# Radiolla
-*radiolla.com
-
-# Oxigenio.fm
-*oxigenio.fm
-
-# Intergalactic FM
-*intergalactic.fm
-
-# Radio Cuca
-*radiocuca.es
-
 # Irama Nusantara
 iramanusantara.org
-
-# Yammat FM
-*yammat.fm
 
 # Husk Recordings
 huskrecordings.com
@@ -1062,10 +994,6 @@ player.gotradio.com
 lightningstream.com
 lightningstream.com
 
-# Securenet Systems
-radio.securenetsystems.net
-stream*.securenetsystems.net
-
 # WBRU
 www.wbru.com
 
@@ -1085,12 +1013,6 @@ amazingradio.us
 # DR Lyd
 www.dr.dk
 
-# lulu.fm
-*lulu.fm
-
-# ROCK ANTENNE
-*rockantenne.tld
-
 # copyparty
 127.0.0.1:3923
 a.ocv.me
@@ -1106,19 +1028,6 @@ trackerhub.vercel.app
 
 # Gensokyo Radio
 gensokyoradio.net
-
-# Stationhead
-*stationhead.com
-
-# TECHNOBASE.FM
-*technobase.fm
-*housetime.fm
-*hardbase.fm
-*trancebase.fm
-*coretime.fm
-*clubtime.fm
-*teatime.fm
-*replay.fm
 
 # Telegram A
 web.telegram.org
@@ -1191,23 +1100,6 @@ jam.coop
 
 # Zing MP3
 zingmp3.vn
-
-# NTS Live
-*nts.live
-
-# NTS Shows
-*nts.live/
-*nts.live
-*nts.live
-*nts.live
-*nts.live
-*nts.live
-*nts.live
-*nts.live
-*nts.live
-*nts.live
-*nts.live
-*nts.live
 
 # earth.fm
 earth.fm

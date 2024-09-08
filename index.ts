@@ -3,6 +3,7 @@
 import fs from 'fs';
 import util from 'util';
 import fetch from 'node-fetch';
+import { connectorsToHostFile } from './utils';
 
 const mkdir = util.promisify(fs.mkdir);
 const writeFile = util.promisify(fs.writeFile);
@@ -73,26 +74,8 @@ async function dumpConnectors() {
 
 async function dumpHostfile() {
 	const connectors = (await import(`./${moduleFile}`)).default as any[];
-
-	const result = connectors
-		.filter((connector) => 'matches' in connector)
-		.map((connector) => {
-			const label = connector.label;
-			const urls = connector.matches.map(function (match) {
-				match = match.replace(/\*:\/\/(\*\.)?/, '');
-				match = match.replace(/\/\*.*/, '');
-				match = match.replace(/\.\*/, '.tld');
-				match = match.replace(/\/.+/, '');
-				return match;
-			});
-
-			return `# ${label}\n${urls.join('\n')}`;
-		});
-
-	const contents = result.join('\n\n');
-
+	const contents = connectorsToHostFile(connectors);
 	console.log(contents);
-
 	await writeFile(hostFile, contents);
 }
 
