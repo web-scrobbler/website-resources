@@ -11,13 +11,11 @@ function connectorsToHostFile(connectors) {
 				return match;
 			});
 
-			console.log(urls)
+			console.log(urls);
 
 			return `# ${label}\n${urls.join('\n')}`;
 		})
 		.filter((result) => !result.includes('*'));
-
-
 
 	return results.join('\n\n');
 }

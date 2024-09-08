@@ -32,7 +32,6 @@ test('hostfile with tld', () => {
 	expect(utils.connectorsToHostFile(connectors)).toBe('# test\nexample.tld');
 });
 
-
 test('hostfile with wildcard domain', () => {
 	const connectors = [
 		{
@@ -43,5 +42,3 @@ test('hostfile with wildcard domain', () => {
 
 	expect(utils.connectorsToHostFile(connectors)).toBe('');
 });
-
-

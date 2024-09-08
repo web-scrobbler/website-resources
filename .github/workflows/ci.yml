@@ -27,7 +27,7 @@ jobs:
         env:
           CI: true
   test:
-    name: Run lint:prettier
+    name: Run test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
