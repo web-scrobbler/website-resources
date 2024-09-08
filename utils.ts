@@ -1,9 +1,9 @@
-function connectorsToHostFile(connectors) {
+function connectorsToHostFile(connectors: any[]) {
 	const results = connectors
 		.filter((connector) => 'matches' in connector)
 		.map((connector) => {
 			const label = connector.label;
-			const urls = connector.matches.map(function (match) {
+			const urls = connector.matches.map(function (match: string) {
 				match = match.replace(/\*:\/\/(\*\.)?/, '');
 				match = match.replace(/\/\*.*/, '');
 				match = match.replace(/\.\*/, '.tld');
