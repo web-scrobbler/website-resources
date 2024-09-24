@@ -42,3 +42,14 @@ test('hostfile with wildcard domain', () => {
 
 	expect(utils.connectorsToHostFile(connectors)).toBe('');
 });
+
+test('hostfile basic with trailing slash', () => {
+	const connectors = [
+		{
+			label: 'test',
+			matches: ['*://*.example.com/'],
+		},
+	];
+
+	expect(utils.connectorsToHostFile(connectors)).toBe('# test\nexample.com');
+});

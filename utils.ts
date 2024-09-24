@@ -8,6 +8,7 @@ function connectorsToHostFile(connectors) {
 				match = match.replace(/\/\*.*/, '');
 				match = match.replace(/\.\*/, '.tld');
 				match = match.replace(/\/.+/, '');
+				match = match.replace(/\/$/, '');
 				return match;
 			});
 

@@ -136,10 +136,10 @@ onlineradiobox.com
 music.163.com
 
 # Ambient Sleeping Pill
-ambientsleepingpill.com/
+ambientsleepingpill.com
 
 # a.m. ambient
-amambient.com/
+amambient.com
 
 # Tidal
 listen.tidalhifi.com
@@ -234,7 +234,7 @@ somafm.com
 freemusicarchive.org
 
 # Reddit Music Player
-reddit.musicplayer.io/
+reddit.musicplayer.io
 
 # Новое Радио
 www.novoeradio.by
@@ -365,7 +365,7 @@ www.monstercat.com
 listen.moe
 
 # anime(bits)
-radio.animebits.moe/
+radio.animebits.moe
 radio.animebits.moe
 
 # Fair Price Music
@@ -614,7 +614,7 @@ embed.radio.co
 embed.radio.co
 
 # Super45.fm
-super45.fm/
+super45.fm
 
 # R/a/dio
 r-a-d.io
@@ -979,7 +979,7 @@ www.qcindie.com
 www.cpr.org
 
 # Indie 102.3
-indie.cpr.org/
+indie.cpr.org
 
 # WXPN
 xpn.org
