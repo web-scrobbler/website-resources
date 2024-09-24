@@ -3,6 +3,7 @@
 import fs from 'fs';
 import util from 'util';
 import fetch from 'node-fetch';
+import { connectorsToHostFile } from './utils';
 
 const mkdir = util.promisify(fs.mkdir);
 const writeFile = util.promisify(fs.writeFile);
@@ -15,6 +16,7 @@ const rawContentUrl = `https://raw.githubusercontent.com/${owner}/${repo}`;
 const resDir = 'resources';
 const moduleFile = 'connectors.ts';
 const listFile = `${resDir}/connectors.json`;
+const hostFile = `${resDir}/hostfile.txt`;
 
 async function main(args: string[]) {
 	const latestTag = args.at(-1);
@@ -27,9 +29,18 @@ async function main(args: string[]) {
 	let exitCode = 0;
 	try {
 		await downloadModule(latestTag);
-		await dumpConnectors();
 
+		if (!fs.existsSync(resDir)) {
+			mkdir(resDir);
+		}
+
+		await dumpConnectors();
 		console.log(`Dumped connectors from ${latestTag} release.`);
+
+		await dumpHostfile();
+		console.log(`Dumped hostfile from ${latestTag} release.`);
+
+		// await removeFile(moduleFile);
 	} catch (e) {
 		console.error(`Unable to dump connectors from ${latestTag} release.`);
 		console.log(e);
@@ -58,12 +69,14 @@ async function dumpConnectors() {
 	const labelArray = connectors.map((entry) => entry.label);
 	const contents = JSON.stringify(labelArray, null, 2) + '\n';
 
-	if (!fs.existsSync(resDir)) {
-		mkdir(resDir);
-	}
-
 	await writeFile(listFile, contents);
-	await removeFile(moduleFile);
+}
+
+async function dumpHostfile() {
+	const connectors = (await import(`./${moduleFile}`)).default as any[];
+	const contents = connectorsToHostFile(connectors);
+	console.log(contents);
+	await writeFile(hostFile, contents);
 }
 
 function getModuleUrl(tagName) {

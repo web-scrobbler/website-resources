@@ -9,9 +9,11 @@
     "url": "https://github.com/web-scrobbler/website-resources/"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.12",
     "@types/node-fetch": "^2.6.3",
-    "eslint": "8.57.0",
     "@web-scrobbler/eslint-config": "3.1.1",
+    "eslint": "8.57.0",
+    "jest": "^29.7.0",
     "node-fetch": "3.3.2",
     "prettier": "3.3.3",
     "prettier-config-web-scrobbler": "0.1.0",
@@ -28,6 +30,7 @@
   "scripts": {
     "lint": "eslint .",
     "lint:prettier": "prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "jest"
   }
 }
